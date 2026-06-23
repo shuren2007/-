@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>球友登记</title>
+  <style>
+    body { background:#f7fff7; font-family:Arial,sans-serif; color:#333; margin:0; }
+    main { max-width:600px; margin:auto; padding:30px 10px; }
+    label { font-weight:bold; color:#27ae60; }
+    input, select, textarea { width:100%; padding:8px; margin:8px 0 18px; border-radius:4px; border:1px solid #aaa; }
+    .btn { background:#27ae60; color:#fff; padding:10px 20px; border:none; border-radius:5px; font-weight:bold; cursor:pointer; }
+    nav a { color:#27ae60; margin:0 15px; text-decoration:none; font-weight:bold; }
+  </style>
+</head>
+<body>
+  <nav style="text-align:center; margin-top:8px; margin-bottom:8px;">
+    <a href="index.html">首页</a>
+    <a href="register.html">球友登记</a>
+    <a href="list.html">球友列表</a>
+    <a href="share.html">心得分享</a>
+    <a href="about.html">关于我们</a>
+  </nav>
+  <main>
+    <h2>球友登记</h2>
+    <form>
+      <label>昵称:</label>
+      <input type="text" name="nickname" required>
+      <label>地区:</label>
+      <select name="region" required>
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>深圳</option>
+        <option>其他</option>
+      </select>
+      <label>性别:</label>
+      <select name="gender" required>
+        <option>男</option>
+        <option>女</option>
+        <option>其他</option>
+      </select>
+      <label>差点(HCP):</label>
+      <input type="number" name="handicap" min="0" max="54" required>
+      <label>常去球场:</label>
+      <input type="text" name="golf_club" required>
+      <label>联系方式（手机号/微信）:</label>
+      <input type="text" name="contact" required>
+      <button class="btn">提交登记</button>
+    </form>
+  </main>
+</body>
+</html>
